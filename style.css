@@ -19,6 +19,29 @@
     font-family: var(--normal-font);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main,
+footer {
+    max-width: 1024px;
+    margin: auto;
+}
+
+main {
+    padding: 5vh 10vw 0 10vw;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    padding: 5vh 10vw 0 10vw;
+    text-align: center;
+}
+
 html {
     color-scheme: dark light;
 }
@@ -82,10 +105,16 @@ h6 {
     letter-spacing: 0.15px;
 }
 
-p {
+p,
+li {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+li {
+    list-style: none;
 }
 
 button {
@@ -96,47 +125,71 @@ button {
 }
 
 @media screen and (max-width: 550px) {
-    h1 {
-        font-size: 61px;
+    main {
+        padding: 10px 30px;
     }
 
-    h2 {
+    h1 {
         font-size: 49px;
     }
 
-    h3 {
+    h2 {
         font-size: 35px;
     }
 
-    h4 {
+    h3 {
         font-size: 24px;
     }
 
-    h5 {
+    h4 {
         font-size: 20px;
     }
 
-    h6 {
+    h5 {
         font-size: 17px;
     }
 
-    p {
+    h6 {
+        font-size: 15px;
+    }
+
+    p,
+    li {
         font-size: 15px;
     }
 
     button {
-        font-size: 17px;
+        font-size: 13px;
+        padding: 5px;
+        margin: 5px 0px;
     }
 }
 
 /* classes */
 
 .greeting {
+    max-width: 350px;
+    background: #555;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 0px;
+    margin: 20px auto;
     font-size: 17px;
     font-weight: 200;
     font-style: italic;
 }
 
+.bio-date {
+    font-weight: 700;
+}
+
 .project-preview {
     max-width: 30vw;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 550px) {
+    .project-preview {
+        max-width: 100%;
+    }
 }
