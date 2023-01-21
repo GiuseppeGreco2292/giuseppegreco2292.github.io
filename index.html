@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,69 @@
     <link rel="stylesheet" href="style.css">
     <title>Coming Soon</title>
 </head>
+
 <body>
-    <section>
-        <h1>Lorem</h1>
-        <p>An introduction</p>
+    <p class="greeting">Thank you for checking my profile!</p>
+
+    <section class="introduction">
+        <h1>Giuseppe Greco</h1>
+        <p class="subtitle">Junior Web Developer</p>
     </section>
-    <section>
-        <h2>Lorem</h2>
-        <p><a href="https://react-project-z4n7.onrender.com/" target="_blank">A React project</a></p>
-        <h2>Lorem</h2>
-        <p><a href="https://laravel-project-b7lq.onrender.com" target="_blank">A Laravel project</a></p>
-    </section>
+
+    <main>
+        <section class="bio">
+            <h2>Bio</h2>
+            <ul>
+                <li>
+                    <span class="bio-date">1992</span>
+                    <span class="bio-event">Born in Grottaglie (TA), Italy</span>
+                </li>
+                <li>
+                    <span class="bio-date">2010</span>
+                    <span class="bio-event">BA in Foreign Languages and Literatures at Milan State University</span>
+                </li>
+                <li>
+                    <span class="bio-date">2017</span>
+                    <span class="bio-event">Professional Translator Diploma at SSIT Pescara</span>
+                </li>
+                <li>
+                    <span class="bio-date">2020</span>
+                    <span class="bio-event">Full-Stack Coding Bootcamp at Aulab (Bari)</span>
+                </li>
+                <li>
+                    <span class="bio-date">2020 - 2021</span>
+                    <span class="bio-event">Worked as Full-Stack Junior Developer at Aulab (Bari)</span>
+                </li>
+            </ul>
+            <button>Download CV</button>
+        </section>
+
+        <section class="portfolio">
+            <h2>Sample Work</h2>
+            <section class="project">
+                <h3>React Kata Navigator</h3>
+                <div class="project-container">
+                    <img src="./img/placeholder.jpg" alt="React Kata Navigator" class="project-preview">
+                    <p class="project-description">Simple React Navigator for programming Katas</p>
+                    <ul>
+                        <li>
+                            <a href="https://react-project-z4n7.onrender.com" target="_blank"
+                                class="project-link">Live</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GiuseppeGreco2292/react-katas" target="_blank"
+                                class="project-link">Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2023 Giuseppe Greco. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
