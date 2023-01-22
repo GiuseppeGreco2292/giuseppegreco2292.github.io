@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Coming Soon</title>
 </head>
 
-<body>
+<body ontouchstart>
     <main>
-        <p class="greeting">Hello there!<br />Thanks for checking my profile.</p>
-
         <section class="introduction">
             <h1>Giuseppe Greco</h1>
             <p class="subtitle">Junior Web Developer</p>
@@ -39,11 +40,16 @@
                 </li>
                 <li>
                     <span class="bio-date">2020 - 2021</span>
-                    <span class="bio-event">Worked as Full-Stack Junior Developer at Aulab (Bari)</span>
+                    <span class="bio-event">Worked as Junior Full-Stack Developer at Aulab (Bari)</span>
                 </li>
             </ul>
-            <a href="#" download>
-                <button>Download CV</button>
+
+            <a href="./files/light_cv_en.pdf" class="btn-a" download>
+                Download CV - EN
+            </a>
+
+            <a href="./files/light_cv_it.pdf" class="btn-a" download>
+                Download CV - IT
             </a>
         </section>
 
@@ -52,18 +58,16 @@
             <section class="project">
                 <h3>React Kata Navigator</h3>
                 <div class="project-container">
-                    <img src="./img/placeholder.jpg" alt="React Kata Navigator" class="project-preview">
-                    <p class="project-description">Simple React Navigator for programming Katas</p>
-                    <ul>
-                        <li>
-                            <a href="https://react-project-z4n7.onrender.com" target="_blank"
-                                class="project-link">Live</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/GiuseppeGreco2292/react-katas" target="_blank"
-                                class="project-link">Code</a>
-                        </li>
-                    </ul>
+                    <div class="project-col1">
+                        <img src="./img/placeholder.jpg" alt="React Kata Navigator" class="project-preview">
+                    </div>
+                    <div class="project-col2">
+                        <p class="project-description">Simple React Navigator for programming Katas</p>
+                        <a href="https://react-project-z4n7.onrender.com" target="_blank" class="btn-a"
+                            class="project-link"><i class="fa-brands fa-chrome"></i> Live</a>
+                        <a href="https://github.com/GiuseppeGreco2292/react-katas" target="_blank" class="btn-a"
+                            class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
                 </div>
             </section>
         </section>
