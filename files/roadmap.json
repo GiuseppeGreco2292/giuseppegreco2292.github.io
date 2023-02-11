@@ -1,3 +1,13 @@
 {
-    "text": "hello world"
+    "basics": {
+        "label": "The Basics",
+        "content": {
+            "html": {
+                "label": "HTML"
+            },
+            "css": {
+                "label": "CSS"
+            }
+        }
+    }
 }
